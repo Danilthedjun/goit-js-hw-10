@@ -65,6 +65,7 @@ button.addEventListener('click', event => {
       addLeadingZero(seconds);
     if (days === 0 && hours === 0 && minutes === 0 && seconds === 0) {
       clearInterval(intervalId);
+      input.removeAttribute('disabled');
     }
     ms = ms - 1000;
   }, 1000);
